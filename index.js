@@ -4,7 +4,6 @@ function fetchBooks() {
     .then((resp) => resp.json())
     .then((json) => renderBooks(json)); // Pass the JSON response to renderBooks()
 }
-
 function renderBooks(books) {
   const main = document.querySelector('main');
   books.forEach(book => {
